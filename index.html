@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+        <!-- Unicons -->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+        <!--CSS-->
+        <link rel="stylesheet" href="assets/css/style.css" />
+
+
+        <title>Harshitha Guru Raj</title>
+    </head>
+    <body>
+        <!-- HEADER -->
+       <header class="header" id="header">
+        <nav class="nav fixed top-0 left-0 w-full z-50 p-5">
+            <a href="index.html" class="nav__logo">H<span>G</span>R</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li><a href="#home" class="nav__link active-link">Home</a></li>
+
+                    <li><a href="#about" class="nav__link">About</a></li>
+
+                    <li><a href="#experience" class="nav__link">Experience</a></li>
+
+                    <li><a href="#skills" class="nav__link">Skills</a></li>
+
+                    <li><a href="#project" class="nav__link">Projects</a></li>
+
+                    <li><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class="ui uil-times"></i>
+                </div>
+            </div>
+            <div class="nav__socials">
+              <a
+                    href="https://www.linkedin.com/in/harshitha-g-raj/"
+                    target="_blank"
+                    class="nav__social-link">
+                    <i class="uil uil-linkedin"></i>
+                </a>
+                <a
+                    href="https://github.com/HarshithaGuruRaj"
+                    target="_blank"
+                    class="nav__social-link">
+                    <i class="uil uil-github"></i>
+                </a>
+
+            </div>
+
+            <div class="nav__btns">
+                <a href="#contact" class="nav__link-btn btn">Let's Talk</a>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-bars"></i>
+                </div>
+            </div>
+        </nav>
+       </header>
+
+        <!-- MAIN -->
+        <main class="main">
+            <!-- HOME -->
+            <section class="home" id="home">
+                <div class="home__container container grid">
+                    <div class="home__content">
+                        <span class="home__subtitle">Let's get to know me!</span>
+                        <h1 class="home__title">Hello!! <br /> I'm Harshitha Guru Raj <span class="auto-type">  </span> </h1>
+                        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+                        <script>
+                            var typed= new Typed(".auto-type", { 
+                                strings: ["Software Developer", "Full Stack Developer", "Cloud Engineer", "Database Architect"],
+                                typeSpeed: 120,
+                                backSpeed: 100, loop: true
+                            })
+                        </script>
+                        <p class="text-lg mt-8">"Coding is my therapy. I debug my problems away."</p>
+                    </div>
+                      
+
+                    <img src="assets/img/background.jpg" alt="1st Image" class="home__img">
+                </div>
+            </section>
+            <!-- ABOUT -->
+            <!-- <section class="about section" id="about">
+                <div class="about__container container grid">
+                    <img src="assets/img/about.jpeg" alt="" class="about__img">
+                    <div class="about__content">
+                        <h2 class="section__title">About Me</h2>
+
+                        <p class="about__description">Ambitious and mindful individual passionate to gain strong organizational skills. I intend to be able to constantly learn and implement my technical and management skills and make the best use of them.</p>
+                        <div>
+                            <ul>
+                                <li>
+                                    <p>Skilled Full Stack Developer with 3 years of hands-on combined experience at internships as well as full-time, in developing responsive web applications and backend systems using technologies like React, Spring, and NodeJS, with a strong focus on optimizing application efficiency and functionality.</p>
+                                </li>
+                                <li>
+                                    <p> Proficient Frontend Developer adept at creating intuitive user interfaces with ReactJS and Angular, specializing in enhancing user experience through effective UI/UX design and state-of-the-art visualizations.</p>
+                                </li>
+                                <li>
+                                    <p> Experienced in designing robust backend architectures using Spring Boot and Nodejs, improving system efficiency by 25% through innovative microservice solutions and comprehensive RESTful API management.</p>
+                                </li>
+                            </ul>
+                        </div>
+                       
+                    </div>
+                </div>
+            </section> -->
+
+            <section class="about section bg-gray-50 py-10" id="about">
+                <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+                    <img src="assets/img/about.jpeg" alt="About me" class="rounded-lg shadow-xl">
+                    
+                    <div>
+                        <h2 class="section__title text-3xl font-bold text-gray-800 mb-5">About Me</h2>
+                        <p class="text-gray-600 mb-5">Ambitious and mindful individual passionate to gain strong organizational skills. I intend to be able to constantly learn and implement my technical and management skills and make the best use of them.</p>
+                        
+                        <div class="space-y-4">
+                            <p class="text-gray-600">Skilled Full Stack Developer with 3 years of hands-on combined experience at internships as well as full-time, in developing responsive web applications and backend systems using technologies like React, Spring, and NodeJS, with a strong focus on optimizing application efficiency and functionality.</p>
+                            
+                            <p class="text-gray-600">Proficient Frontend Developer adept at creating intuitive user interfaces with ReactJS and Angular, specializing in enhancing user experience through effective UI/UX design and state-of-the-art visualizations.</p>
+                            
+                            <p class="text-gray-600">Experienced in designing robust backend architectures using Spring Boot and Nodejs, improving system efficiency by 25% through innovative microservice solutions and comprehensive RESTful API management.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="experience section" id="experience">
+                <div class="experience__container ">
+                    <h1 class="experience__title text-4xl font-bold text-white mt-[-20px]">Experience</h1>
+                    <div class="timeline">
+                        <div class="timeline-item right">
+                            <div class="timeline-content">
+                                <div class="box">
+                                    <h3 class="box_title"><span class="year">2024</span>Ranial Systems</h3>
+                                    <p>
+                                        Develop and document four end-to-end RESTful APIs for integrating client applications with backend services, enabling data exchange and functionality access.
+                                    </p>
+                                </div>
+                              <!-- <div class="timeline-date">2019</div>
+                              <div class="timeline-description">Hitachi Consulting</div> -->
+                            </div>
+                          </div>
+                        <div class="timeline-item right">
+                            <div class="timeline-content">
+                              <div class="timeline-date">2020</div>
+                              <div class="timeline-description">Accenture Consulting Services Ltd</div>
+                            </div>
+                          </div>
+                        
+                        <div class="timeline-item left">
+                          <div class="timeline-content">
+                            <div class="timeline-date">2023</div>
+                            <div class="timeline-description">Commvault Systems</div>
+                          </div>
+                        </div>
+                        <div class="timeline-item right">
+                          <div class="timeline-content">
+                            <div class="timeline-date">2024</div>
+                            <div class="timeline-description">Ranial Systems</div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </section>
+
+            <section class="skills section bg-gray-800 py-10" id="skills">
+                <h1 class="text-center text-6xl font-bold text-white mt-[-20px] pb-8">My Arsenal of Awesomeness</h1>
+                <div class="container mx-auto px-4">  
+                    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                        <div class="relative overflow-hidden rounded-lg group">
+                            <img src="assets/img/java.png" alt="Java" class="mx-auto h-30 w-30 object-cover transition duration-300 transform hover:scale-150">
+                            <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <span class="text-white text-xl font-semibold">Java</span>
+                            </div>
+                        </div>
+                        <div class="relative overflow-hidden rounded-lg group">
+                            <img src="assets/img/python.png" class="mx-auto h-30 w-30 object-cover transition duration-300 transform hover:scale-150"/>
+                            <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <span class="text-white text-xl font-semibold">Python</span>
+                            </div>
+                        </div> 
+                        <div class="relative overflow-hidden rounded-lg group">
+                            <img src="assets/img/ts.png" class="mx-auto h-30 w-30 object-cover transition duration-300 transform hover:scale-150"/>
+                            <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <span class="text-white text-xl font-semibold">TypeScript</span>
+                            </div>
+                        </div>  
+                        <div class="relative overflow-hidden rounded-lg group">
+                            <img src="assets/img/html.png" class="mx-auto h-30 w-30 object-cover transition duration-300 transform hover:scale-150" />
+                            <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <span class="text-white text-xl font-semibold">HTML</span>
+                            </div>
+                        </div>
+                        <div class="relative overflow-hidden rounded-lg group">
+                            <img src="assets/img/css.png" class="mx-auto h-30 w-30 object-cover transition duration-300 transform hover:scale-150" />
+                            <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <span class="text-white text-xl font-semibold">CSS</span>
+                            </div>
+                        </div>
+                        <div class="relative overflow-hidden rounded-lg group">
+                            <img src="assets/img/react.png" class="mx-auto h-30 w-30 object-cover transition duration-300 transform hover:scale-150" />
+                            <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <span class="text-white text-xl font-semibold">React</span>
+                            </div>
+                        </div> 
+                        <div class="relative overflow-hidden rounded-lg group">
+                            <img src="assets/img/angular.png" class="mx-auto h-30 w-30 object-cover transition duration-300 transform hover:scale-150" />
+                            <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <span class="text-white text-xl font-semibold">Angular</span>
+                            </div>
+                        </div> 
+                        <div class="relative overflow-hidden rounded-lg group">
+                            <img src="assets/img/android.png" class="mx-auto h-30 w-30 object-cover transition duration-300 transform hover:scale-150" />
+                            <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <span class="text-white text-xl font-semibold">Android Application Development</span>
+                            </div>
+
+                        </div> 
+                        <div class="relative overflow-hidden rounded-lg group">
+                            <img src="assets/img/mongoDB.png" class="mx-auto h-30 w-30 object-cover transition duration-300 transform hover:scale-150" />
+                            <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <span class="text-white text-xl font-semibold">MongoDB</span>
+                            </div>
+                        </div> 
+                        <div class="relative overflow-hidden rounded-lg group">
+                            <img src="assets/img/AWS.png" class="mx-auto h-30 w-30 object-cover transition duration-300 transform hover:scale-150" />
+                            <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <span class="text-white text-xl font-semibold">Amazon Web Services</span>
+                            </div>
+                        </div> 
+                        <div class="relative overflow-hidden rounded-lg group">
+                            <img src="assets/img/kubernetes.png" class="mx-auto h-30 w-30 object-cover transition duration-300 transform hover:scale-150" />
+                            <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <span class="text-white text-xl font-semibold">Kubernetes</span>
+                            </div>
+                        </div> 
+                        <div class="relative overflow-hidden rounded-lg group">
+                            <img src="assets/img/cassandra.png" class="mx-auto h-30 w-30 object-cover transition duration-300 transform hover:scale-150" />
+                            <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <span class="text-white text-xl font-semibold">Cassandra</span>
+                            </div>
+                        </div> 
+                        <div class="relative overflow-hidden rounded-lg group">
+                            <img src="assets/img/flask.png" class="mx-auto h-30 w-30 object-cover transition duration-300 transform hover:scale-150" />
+                            <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <span class="text-white text-xl font-semibold">Flask</span>
+                            </div>
+                        </div> 
+                        <div class="relative overflow-hidden rounded-lg group">
+                            <img src="assets/img/nodejs.png" class="mx-auto h-30 w-30 object-cover transition duration-300 transform hover:scale-150" />
+                            <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <span class="text-white text-xl font-semibold">NodeJS</span>
+                            </div>
+                        </div> 
+                        <div class="relative overflow-hidden rounded-lg group">
+                            <img src="assets/img/spring.svg" class="mx-auto h-30 w-30 object-cover transition duration-300 transform hover:scale-150" />
+                            <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <span class="text-white text-xl font-semibold">Spring</span>
+                            </div>
+                        </div> 
+                        <div class="relative overflow-hidden rounded-lg group">
+                            <img src="assets/img/mysql.png" class="mx-auto h-30 w-30 object-cover transition duration-300 transform hover:scale-150" />
+                            <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <span class="text-white text-xl font-semibold">MySQL</span>
+                            </div>
+                        </div> 
+                        <div class="relative overflow-hidden rounded-lg group">
+                            <img src="assets/img/tailwind.png" class="mx-auto h-30 w-30 object-cover transition duration-300 transform hover:scale-150" />
+                            <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <span class="text-white text-xl font-semibold">Tailwind CSS</span>
+                            </div>
+                        </div> 
+                        <div class="relative overflow-hidden rounded-lg group">
+                            <img src="assets/img/nextJS.png" class="mx-auto h-30 w-30 object-cover transition duration-300 transform hover:scale-150" />
+                            <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <span class="text-white text-xl font-semibold">Next JS</span>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                </div>
+            </section>
+
+            <section class="project section" id="project">
+                    <h1 class="text-center text-6xl font-bold text-white mt-[-20px]">Projects</h1>
+
+            </section>
+
+            <!-- PORTFOLIO -->
+            <!-- <section class="portfolio section" id="project">
+                <h2 class="section__title">My Latest Project</h2>
+                <p class="section__description">
+                    Please look at the brief description about the projects I have worked on.
+                </p>
+                <div class="portfolio__container container grid">
+                    <div class="portfolio__item">
+                        <img src="assets/img/portfolio-1.jpg" alt="" class="portfolio__img" />
+                        <div class="portfolio__data">
+                            <p class="portfolio__subtitle">Development</p>
+                            <h3 class="portfolio__title">Web page</h3>
+                            <p class="portfolio__description">This is my DBMS project which helps the user to look for the open positions.</p>
+                        </div>
+                    </div>
+
+                    <div class="portfolio__item">
+                        <img src="assets/img/portfolio-2.jpg" alt="" class="portfolio__img" />
+                        <div class="portfolio__data">
+                            <p class="portfolio__subtitle">Development</p>
+                            <h3 class="portfolio__title">web page</h3>
+                            <p class="portfolio__description">Lorem ipsum dorem..........</p>
+                        </div>
+                    </div>
+
+                    <div class="portfolio__item">
+                        <img src="assets/img/portfolio-3.jpg" alt="" class="portfolio__img" />
+                        <div class="portfolio__data">
+                            <p class="portfolio__subtitle">Android Application</p>
+                            <h3 class="portfolio__title">Event Planner</h3>
+                            <p class="portfolio__description">This app helps in navigating through various events happening across the university and also provides the location of the events.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section> -->
+            
+            
+              
+            <!-- CONTACT -->
+            <section class="contact section" id="contact">
+                <div class="contact__container container items-center max-w-2xl">
+                    <div class="contact__content ">
+                        <h2 class="section__title">Contact Me</h2>
+
+                        <p class="contact__description">
+                            Feel free to connect with me. Contact me via phone:
+                            <a href="tel: +1(607)2358375">01234-56789</a> or email:
+                            <a href="mailto:harshithagrad22@gmail.com">harshithagrad22@gmail.com</a>
+                        </p>
+                        <form class="contact__form" id="contact-form">
+                            <div class="contact__form-input">
+                                <input 
+                                    type="text"
+                                    name="name"
+                                    placeholder="Your name *"
+                                    class="contact__input"
+                                    id="contact-name"
+                                    />
+                            </div>
+                            <div class="contact__form-input">
+                                <input 
+                                    type="email"
+                                    name="email"
+                                    placeholder="Your email *"
+                                    class="contact__input"
+                                    id="contact-email"
+                                    />
+                            </div>
+                            <div class="contact__form-input">
+                                <input 
+                                    type="text"
+                                    name="subject"
+                                    placeholder="Write a Subject"
+                                    class="contact__input"
+                                    id="contact-subject"
+                                    />
+                            </div>
+                            <div class="contact__form-input">
+                                <textarea 
+                                    name="message" id="contact-message" 
+                                    class="contact__input textarea" placeholder="Your message"
+                                ></textarea>
+                            </div> 
+
+                            <input type="submit" value="Submit" class="btn" />
+
+                            <p class="error__message" id="error-message"></p>
+
+                        </form>
+                    </div>
+
+                    <!-- <img src="assets/img/contact.jpeg" alt="" class="contact__img" /> -->
+                </div>
+            </section>
+        </main>
+
+        <!-- FOOTER-->
+        <footer class="footer">
+            <div class="footer__container container grid">
+                <a href="index.html" class="footer__logo">H<span>G</span>R</a>
+
+                <div class="footer__socials">
+                     <a
+                        href="https://www.linkedin.com/in/harshitha-g-raj/"
+                        target="_blank"
+                        class="footer__social-link">
+                        <i class="uil uil-linkedin"></i>
+                    </a>
+                    <a
+                        href="https://github.com/HarshithaGuruRaj"
+                        target="_blank"
+                        class="footer__social-link">
+                        <i class="uil uil-github"></i>
+                    </a>
+
+                </div>
+                <p class="footer__copyright"> &copy; 2024. All rights reserved. </p>
+            </div>
+        </footer>
+
+        <!--- SCROLL UP -->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="uil uil-angle-up scrollup__icon"></i>
+        </a>
+
+        <!-- EMAIL JS -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+        <!-- MAIN JS-->
+        <script src="assets/js/main.js"></script>
+    </body>    
+
+</html>
