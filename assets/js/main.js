@@ -12,11 +12,11 @@ if(navToggle) {
 
 /*===== MENU HIDDEN =====*/
 /* Validate if constant exists */
-if(navClose) {
-    navClose.addEventListener('click', () => {
-        navMenu.classList.remove('show-menu');
-    });
-}
+// if(navClose) {
+//     navClose.addEventListener('click', () => {
+//         navMenu.classList.remove('show-menu');
+//     });
+// }
 
 function toggleDescription(cardElement) {
     const description = cardElement.querySelector('.card-description');
@@ -80,49 +80,72 @@ tabs.forEach((tab) => {
 });
 
 /*=============== CONTACT FORM =============== */
-const contactForm = document.getElementById('contact__form'),
-contactName =document.getElementById('contact-name'),
-contactEmail =document.getElementById('contact-email'),
-contactSubject =document.getElementById('contact-subject'),
-contactMessage =document.getElementById('contact-message'),
-error =document.getElementById('error-message');
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('contact-form');
+    form.addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the form from submitting traditionally
 
-const sendEmail = (e) => {
-    e.preventDefault();
+        const formData = {
+            name: document.getElementById('contact-name').value,
+            email: document.getElementById('contact-email').value,
+            subject: document.getElementById('contact-subject').value,
+            message: document.getElementById('contact-message').value
+        };
 
-    //check if the field has a vaule
-    if (contactName.value === '' || contactEmail.value === '' || contactSubject.value === '' || contactMessage.value === '') {
-        //show message
-        errorMessage.textContent = "Write all the input fields";
-    }
+        console.log('Form Data:', formData);
 
-    else {
-        // serviceID - templateID - #form - publickey
-        emailjs.sendForm(
-            'service_xqgadm8',
-            'template_jsnn6lt',
-            '#contact-form',
-            'fxU2wu2ojUApUSgda'
-            ).then(
-                () => {
-            // show messages and add color, window + dot to open emoji
-            errorMessage.classList.add('color-first');
-            errorMessage.textContent = 'Message Sent';
+      
+    });
+});
 
-            // remove message after 5 seconds
-            setTimeout(() => {
-                errorMessage.textContent = '';
-            }, 5000);
-        }, (error) => {
-            alert('OOPs! Something WENT WRONG.....', error);
-        });
 
-        //clear input
-        contactName.value = '';
-        contactEmail.value = '';
-        contactSubject.value = '';
-        contactMessage.value = '';
-    }
-};
+document.addEventListener('DOMContentLoaded', function() {
+    emailjs.init("fxU2wu2ojUApUSgda"); // Initialize EmailJS with your user ID.
 
-contactForm.addEventListener('submit', sendEmail);
+    const form = document.getElementById('contact-form');
+    console.log(document.getElementById('contact-name'));
+    const errorMessage = document.getElementById('error-message');
+    const submitButton = form.querySelector('button[type="submit"]');
+
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        // Disable the submit button to prevent multiple submissions
+        submitButton.disabled = true;
+        submitButton.textContent = 'Sending...';
+
+        // Validate form fields
+        if (!form.checkValidity()) {
+            errorMessage.textContent = "Please fill in all required fields correctly.";
+            submitButton.disabled = false;
+            submitButton.textContent = 'Submit';
+            return;
+        }
+
+        // Gather data for console logging (testing purposes)
+        const formData = {
+            name: document.getElementById('contact-name').value,
+            email: document.getElementById('contact-email').value,
+            subject: document.getElementById('contact-subject').value,
+            message: document.getElementById('contact-message').value
+        };
+        console.log('Form Data:', formData);
+
+        emailjs.sendForm('service_xqgadm8', 'template_jsnn6lt', this)
+            .then(function() {
+                errorMessage.textContent = 'Message sent successfully!';
+                console.log('Email successfully sent!');
+                setTimeout(() => {
+                    errorMessage.textContent = '';
+                }, 5000);
+                form.reset(); // Reset form after successful submission
+            }, function(error) {
+                errorMessage.textContent = 'Failed to send message. Error: ' + error.text;
+                console.error('Email sending error:', error);
+            }).finally(() => {
+                // Re-enable the submit button after the email is sent
+                submitButton.disabled = false;
+                submitButton.textContent = 'Submit';
+            });
+    });
+});

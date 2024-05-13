@@ -13,8 +13,21 @@
         <!--CSS-->
         <link rel="stylesheet" href="assets/css/style.css" />
 
-
+        <!-- MAIN JS-->
+        <script src="assets/js/main.js"></script>
+        
         <title>Harshitha Guru Raj</title>
+
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "fxU2wu2ojUApUSgda",
+        });
+    })();
+    </script>
     </head>
     <body>
         <!-- HEADER -->
@@ -135,7 +148,85 @@
                 </div>
             </section>
             
-            <section class="experience section" id="experience">
+
+            <section class="experience section pt-8 pb-8 text-center bg-gray-800"id="experience">
+                <h1 class="text-6xl font-bold text-white mt-[-20px] pb-8">Work experience</h1>
+               
+                <div class="timeline">
+                    <div class="timeline-container right">
+                        <div class="date">Jan 2024</div>
+                        <i class="icon fa fa-gift"></i>
+                        <div class="content">
+                          <h2>Ranial Systems</h2>
+                          <p>
+                            Design and maintain NoSQL databases using Cassandra and MongoDB to efficiently store and manage data, ensuring scalability and performance.
+                          </p>
+                        </div>
+                    </div>
+                    <div class="timeline-container left">
+                      <div class="date">May 2023</div>
+                      <i class="icon fa fa-home"></i>
+                      <div class="content">
+                        <h2>Commvault Systems</h2>
+                        <p>
+                            Design and develop an intuitive user interface for cloud backup and recovery operations, focusing on usability and user experience improvements.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="timeline-container right">
+                      <div class="date">May 2020</div>
+                      <i class="icon fa fa-gift"></i>
+                      <div class="content">
+                        <h2>Accenture Solutions Private Ltd</h2>
+                        <p>
+                            Implement a microservices-based architecture on the AWS platform using
+                            Kubernetes, enabling modular development, scalability, and efficient resource management.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="timeline-container left">
+                      <div class="date">Apr 2019</div>
+                      <i class="icon fa fa-user"></i>
+                      <div class="content">
+                        <h2>Hitachi Consulting Services Pvt Ltd</h2>
+                        <p>
+                            Designed and implemented a serverless architecture leveraging AWS Lambda and Amazon API Gateway, resulting in a 40% reduction in infrastructure costs and a 50% improvement in system scalability.
+                        </p>
+                      </div>
+                    </div>
+                    <!-- <div class="timeline-container right">
+                      <div class="date">18 May</div>
+                      <i class="icon fa fa-running"></i>
+                      <div class="content">
+                        <h2>Lorem ipsum dolor sit amet</h2>
+                        <p>
+                          Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+                        </p>
+                      </div>
+                    </div> -->
+                    <!-- <div class="timeline-container left">
+                      <div class="date">10 Feb</div>
+                      <i class="icon fa fa-cog"></i>
+                      <div class="content">
+                        <h2>Lorem ipsum dolor sit amet</h2>
+                        <p>
+                          Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+                        </p>
+                      </div>
+                    </div> -->
+                    <!-- <div class="timeline-container right">
+                      <div class="date">01 Jan</div>
+                      <i class="icon fa fa-certificate"></i>
+                      <div class="content">
+                        <h2>Lorem ipsum dolor sit amet</h2>
+                        <p>
+                          Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+                        </p>
+                      </div>
+                    </div> -->
+                  </div>
+            </section>
+            <!-- <section class="experience section" id="experience">
                 <div class="experience__container ">
                     <h1 class="experience__title text-4xl font-bold text-white mt-[-20px]">Experience</h1>
                     <div class="timeline">
@@ -147,8 +238,8 @@
                                         Develop and document four end-to-end RESTful APIs for integrating client applications with backend services, enabling data exchange and functionality access.
                                     </p>
                                 </div>
-                              <!-- <div class="timeline-date">2019</div>
-                              <div class="timeline-description">Hitachi Consulting</div> -->
+                              <div class="timeline-date">2019</div>
+                              <div class="timeline-description">Hitachi Consulting</div>
                             </div>
                           </div>
                         <div class="timeline-item right">
@@ -172,7 +263,7 @@
                         </div>
                       </div>
                 </div>
-            </section>
+            </section> -->
 
             <section class="skills section bg-gray-800 py-10" id="skills">
                 <h1 class="text-center text-6xl font-bold text-white mt-[-20px] pb-8">My Arsenal of Awesomeness</h1>
@@ -294,44 +385,45 @@
 
             <section class="project section" id="project">
                     <h1 class="text-center text-6xl font-bold text-white mt-[-20px]">Projects</h1>
-
+                    <p class="section__description">
+                        Please look at the brief description about the projects I have worked on.
+                    </p>
+                    <div class="portfolio__container container grid">
+                        <div class="portfolio__item">
+                            <img src="assets/img/portfolio-1.jpeg" alt="" class="portfolio__img" />
+                            <div class="portfolio__data">
+                                <p class="portfolio__subtitle">AWS project</p>
+                                <h3 class="portfolio__title">Document Converter</h3>
+                                <p class="portfolio__description">This is an AWS project, using EC2, S3, Lambda, AWS Gateway, and React</p>
+                            </div>
+                        </div>
+    
+                        <div class="portfolio__item">
+                            <img src="assets/img/portfolio-2.webp" alt="" class="portfolio__img" />
+                            <div class="portfolio__data">
+                                <p class="portfolio__subtitle">Development</p>
+                                <h3 class="portfolio__title">Investigating the foremost factors affecting the artists on Spotify</h3>
+                                <p class="portfolio__description">Developed an interactive web application using frameworks like Flask to provide users
+                                    with a user-friendly interface for exploring trending artists on Spotify.</p>
+                            </div>
+                        </div>
+    
+                        <div class="portfolio__item">
+                            <img src="assets/img/portfolio-3.jpeg" alt="" class="portfolio__img" />
+                            <div class="portfolio__data">
+                                <p class="portfolio__subtitle">Database</p>
+                                <h3 class="portfolio__title">Cattle Management System</h3>
+                                <p class="portfolio__description">This app helps in navigating through various events happening across the university and also provides the location of the events.</p>
+                            </div>
+                        </div>
+    
+                    </div>
             </section>
 
             <!-- PORTFOLIO -->
             <!-- <section class="portfolio section" id="project">
                 <h2 class="section__title">My Latest Project</h2>
-                <p class="section__description">
-                    Please look at the brief description about the projects I have worked on.
-                </p>
-                <div class="portfolio__container container grid">
-                    <div class="portfolio__item">
-                        <img src="assets/img/portfolio-1.jpg" alt="" class="portfolio__img" />
-                        <div class="portfolio__data">
-                            <p class="portfolio__subtitle">Development</p>
-                            <h3 class="portfolio__title">Web page</h3>
-                            <p class="portfolio__description">This is my DBMS project which helps the user to look for the open positions.</p>
-                        </div>
-                    </div>
-
-                    <div class="portfolio__item">
-                        <img src="assets/img/portfolio-2.jpg" alt="" class="portfolio__img" />
-                        <div class="portfolio__data">
-                            <p class="portfolio__subtitle">Development</p>
-                            <h3 class="portfolio__title">web page</h3>
-                            <p class="portfolio__description">Lorem ipsum dorem..........</p>
-                        </div>
-                    </div>
-
-                    <div class="portfolio__item">
-                        <img src="assets/img/portfolio-3.jpg" alt="" class="portfolio__img" />
-                        <div class="portfolio__data">
-                            <p class="portfolio__subtitle">Android Application</p>
-                            <h3 class="portfolio__title">Event Planner</h3>
-                            <p class="portfolio__description">This app helps in navigating through various events happening across the university and also provides the location of the events.</p>
-                        </div>
-                    </div>
-
-                </div>
+                
             </section> -->
             
             
@@ -339,59 +431,35 @@
             <!-- CONTACT -->
             <section class="contact section" id="contact">
                 <div class="contact__container container items-center max-w-2xl">
-                    <div class="contact__content ">
+                    <div class="contact__content">
                         <h2 class="section__title">Contact Me</h2>
-
                         <p class="contact__description">
                             Feel free to connect with me. Contact me via phone:
-                            <a href="tel: +1(607)2358375">01234-56789</a> or email:
+                            <a href="tel:+16072358375">01234-56789</a> or email:
                             <a href="mailto:harshithagrad22@gmail.com">harshithagrad22@gmail.com</a>
                         </p>
                         <form class="contact__form" id="contact-form">
-                            <div class="contact__form-input">
-                                <input 
-                                    type="text"
-                                    name="name"
-                                    placeholder="Your name *"
-                                    class="contact__input"
-                                    id="contact-name"
-                                    />
+                            <div>
+                                <input type="text" name="name" placeholder="Your name *" class="contact__input" id="contact-name" required />
                             </div>
-                            <div class="contact__form-input">
-                                <input 
-                                    type="email"
-                                    name="email"
-                                    placeholder="Your email *"
-                                    class="contact__input"
-                                    id="contact-email"
-                                    />
+                            <div>
+                                <input type="email" name="email" placeholder="Your email *" class="contact__input" id="contact-email" required />
                             </div>
-                            <div class="contact__form-input">
-                                <input 
-                                    type="text"
-                                    name="subject"
-                                    placeholder="Write a Subject"
-                                    class="contact__input"
-                                    id="contact-subject"
-                                    />
+                            <div>
+                                <input type="text" name="subject" placeholder="Write a Subject" class="contact__input" id="contact-subject" />
                             </div>
-                            <div class="contact__form-input">
-                                <textarea 
-                                    name="message" id="contact-message" 
-                                    class="contact__input textarea" placeholder="Your message"
-                                ></textarea>
+                            <div>
+                                <textarea name="message" id="contact-message" class="contact__input textarea" placeholder="Your message" required></textarea>
                             </div> 
-
-                            <input type="submit" value="Submit" class="btn" />
-
+                            <button type="submit" class="btn">Submit</button>
                             <p class="error__message" id="error-message"></p>
-
                         </form>
+                       
                     </div>
-
-                    <!-- <img src="assets/img/contact.jpeg" alt="" class="contact__img" /> -->
                 </div>
             </section>
+            
+            
         </main>
 
         <!-- FOOTER-->
@@ -423,11 +491,9 @@
             <i class="uil uil-angle-up scrollup__icon"></i>
         </a>
 
-        <!-- EMAIL JS -->
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script type="text/javascript" src="https://cdn.emailjs.com/sdk/3.2.0/email.min.js"></script>
 
-        <!-- MAIN JS-->
-        <script src="assets/js/main.js"></script>
+       
     </body>    
 
 </html>
